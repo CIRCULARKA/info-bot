@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoBot.Selenium", "InfoBot.Selenium\InfoBot.Selenium.csproj", "{AE88CFB8-439C-4492-ABEF-2E17981319BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoBot.Core", "InfoBot.Core\InfoBot.Core.csproj", "{36B9524E-439E-42BB-B0FF-9572623EF758}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE88CFB8-439C-4492-ABEF-2E17981319BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE88CFB8-439C-4492-ABEF-2E17981319BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE88CFB8-439C-4492-ABEF-2E17981319BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE88CFB8-439C-4492-ABEF-2E17981319BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36B9524E-439E-42BB-B0FF-9572623EF758}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36B9524E-439E-42BB-B0FF-9572623EF758}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36B9524E-439E-42BB-B0FF-9572623EF758}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36B9524E-439E-42BB-B0FF-9572623EF758}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
