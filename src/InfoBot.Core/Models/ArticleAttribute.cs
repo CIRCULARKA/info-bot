@@ -9,10 +9,10 @@ public class ArticleAttribute
     /// <summary>
     /// Название атрибута
     /// </summary>
-    public string Name { get; private init; }
+    public string Name { get; private init; } = null!;
 
     /// <summary>
     /// Значение атрибута
     /// </summary>
-    public string Value { get; private init; }
+    public string Value { get; private init; } = null!;
 }
