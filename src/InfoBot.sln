@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoBot.Selenium", "InfoBot
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoBot.Core", "InfoBot.Core\InfoBot.Core.csproj", "{36B9524E-439E-42BB-B0FF-9572623EF758}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoBot.Data", "InfoBot.Data\InfoBot.Data.csproj", "{00CE56EA-DAE6-4710-90A6-438C028421B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{36B9524E-439E-42BB-B0FF-9572623EF758}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36B9524E-439E-42BB-B0FF-9572623EF758}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36B9524E-439E-42BB-B0FF-9572623EF758}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00CE56EA-DAE6-4710-90A6-438C028421B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00CE56EA-DAE6-4710-90A6-438C028421B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00CE56EA-DAE6-4710-90A6-438C028421B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00CE56EA-DAE6-4710-90A6-438C028421B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
