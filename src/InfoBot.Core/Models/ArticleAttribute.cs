@@ -30,4 +30,6 @@ public class ArticleAttribute
             Value = entity.Value
         };
 
+    public override string ToString() =>
+        $"{{ Name='{Name}', Value='{Value}' }}";
 }

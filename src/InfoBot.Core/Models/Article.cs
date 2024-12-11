@@ -28,4 +28,14 @@ public class Article
             Source = entity.Source,
             Attributes = entity.Attributes.Select(a => ArticleAttribute.CreateFrom(a)).ToList()            
         };
+
+    public override string ToString()
+    {
+        var builder = new StringBuilder();
+        builder.Append($"{{ {nameof(Source)}='{Source}', {nameof(Attributes)}: ");
+        builder.Append(string.Join(", ", Attributes));
+        builder.Append(" }");
+
+        return builder.ToString();
+    }
 }
