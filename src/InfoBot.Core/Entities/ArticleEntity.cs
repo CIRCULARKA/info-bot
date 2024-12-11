@@ -13,5 +13,5 @@ public class ArticleEntity : Entity
     /// <summary>
     /// Атрибуты статьи
     /// </summary>
-    public List<ArticleAttribute> Attributes { get; set; } = null!;
+    public List<ArticleAttributeEntity> Attributes { get; set; } = null!;
 }
