@@ -1,4 +1,3 @@
-
 namespace InfoBot.Data.Configurations;
 
 public class ArticleAttributeConfiguration : EntityConfiguration<ArticleAttributeEntity>, IEntityTypeConfiguration<ArticleAttributeEntity>
@@ -6,7 +5,7 @@ public class ArticleAttributeConfiguration : EntityConfiguration<ArticleAttribut
     public override void Configure(EntityTypeBuilder<ArticleAttributeEntity> builder)
     {
         base.Configure(builder);
-        builder.Property(e => e.Name).IsRequired();
-        builder.Property(e => e.Value).IsRequired();
+        builder.Property(a => a.Name).IsRequired();
+        builder.Property(a => a.Value).IsRequired();
     }
 }
