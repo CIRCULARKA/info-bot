@@ -56,6 +56,17 @@ public class Page
     }
 
     /// <summary>
+    /// Считывает все элементы на странице по указанному селектору
+    /// </summary>
+    /// <param name="selector">Селектор веб-элемента</param>
+    public IReadOnlyCollection<IWebElement> GetElements(By selector)
+    {
+        ArgumentNullException.ThrowIfNull(selector);
+
+        return _driver.FindElements(selector);
+    }
+
+    /// <summary>
     /// Выбрасывает исключение, если страница не загружена
     /// </summary>
     private void ThrowIfPageNotLoaded()
