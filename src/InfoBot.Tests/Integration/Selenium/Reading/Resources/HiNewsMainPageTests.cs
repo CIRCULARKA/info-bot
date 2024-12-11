@@ -21,8 +21,8 @@ public class HiNewsMainPageTests : IntegrationTests
         var result = mainPage.ReadLatestArticles();
 
         // Assert
-        _logger.WriteLine("Считанные заголовки:");
-        result.ForEach(r => r.Attributes.ForEach(a => _logger.WriteLine(a.Value)));
+        _logger.WriteLine("Считанные статьи:");
+        result.ForEach(r => _logger.WriteLine(r.ToString()));
     }
 
     private IWebDriver CreateChromeDriver()
