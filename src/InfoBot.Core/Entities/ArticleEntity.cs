@@ -14,4 +14,9 @@ public class ArticleEntity : Entity
     /// Атрибуты статьи
     /// </summary>
     public List<ArticleAttributeEntity> Attributes { get; set; } = null!;
+
+    /// <summary>
+    /// Было ли сообщение отправленно
+    /// </summary>
+    public bool IsSent { get; set; }
 }
