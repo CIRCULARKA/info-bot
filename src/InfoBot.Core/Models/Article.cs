@@ -1,3 +1,5 @@
+using InfoBot.Core.Entities;
+
 namespace InfoBot.Core.Models;
 
 /// <summary>
@@ -14,4 +16,16 @@ public class Article
     /// Атрибуты статьи
     /// </summary>
     public List<ArticleAttribute> Attributes { get; private init; } = null!;
+
+    /// <summary>
+    /// Была ли статья отправленна
+    /// </summary>
+    public bool IsSent { get; set; }
+
+    static Article CreateFrom(ArticleEntity entity) =>       
+        new Article()  
+        {
+            Source = entity.Source,
+            Attributes = entity.Attributes.Select(a => ArticleAttribute.CreateFrom(a)).ToList()            
+        };
 }
