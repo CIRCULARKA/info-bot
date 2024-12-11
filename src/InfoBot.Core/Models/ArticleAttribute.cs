@@ -12,12 +12,12 @@ public class ArticleAttribute
     /// <summary>
     /// Название атрибута
     /// </summary>
-    public string Name { get; private init; } = null!;
+    public string Name { get; init; } = null!;
 
     /// <summary>
     /// Значение атрибута
     /// </summary>
-    public string Value { get; private init; } = null!;
+    public string Value { get; init; } = null!;
 
     /// <summary>
     /// Конвертирует сущность в доменный объект

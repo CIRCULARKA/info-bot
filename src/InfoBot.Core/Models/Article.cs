@@ -10,12 +10,12 @@ public class Article
     /// <summary>
     /// Ссылка на источник статьи
     /// </summary>
-    public Uri Source { get; private init; } = null!;
+    public Uri Source { get; init; } = null!;
 
     /// <summary>
     /// Атрибуты статьи
     /// </summary>
-    public List<ArticleAttribute> Attributes { get; private init; } = null!;
+    public List<ArticleAttribute> Attributes { get; init; } = null!;
 
     /// <summary>
     /// Была ли статья отправленна
