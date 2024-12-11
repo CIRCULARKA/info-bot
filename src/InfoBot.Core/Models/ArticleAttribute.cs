@@ -1,3 +1,6 @@
+
+using InfoBot.Core.Entities;
+
 namespace InfoBot.Core.Models;
 
 /// <summary>
@@ -15,4 +18,16 @@ public class ArticleAttribute
     /// Значение атрибута
     /// </summary>
     public string Value { get; private init; } = null!;
+
+    /// <summary>
+    /// Конвертирует сущность в доменный объект
+    /// </summary>
+    /// <param name="entity">Сущность из бд</param>
+    public static ArticleAttribute CreateFrom(ArticleAttributeEntity entity) =>
+        new ArticleAttribute()
+        {
+            Name = entity.Name,
+            Value = entity.Value
+        };
+
 }
