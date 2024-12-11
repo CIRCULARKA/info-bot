@@ -17,9 +17,7 @@ public class HiNewsMainPage : Page, IResourceMainPage
         IWebDriver driver,
         TimeSpan explicitWaitTime,
         TimeSpan pageLoadTimeout) :
-        base(pageUri, driver, explicitWaitTime, pageLoadTimeout)
-    {
-    }
+        base(pageUri, driver, explicitWaitTime, pageLoadTimeout) { }
 
     public List<Article> ReadLatestArticles()
     {
