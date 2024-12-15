@@ -13,12 +13,12 @@ public class ArticleAttribute
     /// <summary>
     /// Название атрибута
     /// </summary>
-    public string Name { get; private init; } = null!;
+    public string Name { get; init; } = null!;
 
     /// <summary>
     /// Значение атрибута
     /// </summary>
-    public string Value { get; private init; } = null!;
+    public string Value { get; init; } = null!;
 
     /// <summary>
     /// Конвертирует сущность в доменный объект
@@ -31,14 +31,6 @@ public class ArticleAttribute
             Value = entity.Value
         };
 
-    public ArticleAttributeEntity ToEntity()   
-    {
-        if (_entity == null)
-            _entity = new ArticleAttributeEntity();
-        
-        _entity.Name = Name;
-        _entity.Value = Value;
-
-        return _entity;
-    }
+    public override string ToString() =>
+        $"{{ Name='{Name}', Value='{Value}' }}";
 }
