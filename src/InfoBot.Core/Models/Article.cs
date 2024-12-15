@@ -7,6 +7,8 @@ namespace InfoBot.Core.Models;
 /// </summary>
 public class Article
 {
+    private ArticleEntity? _entity;
+
     /// <summary>
     /// Ссылка на источник статьи
     /// </summary>
@@ -22,10 +24,30 @@ public class Article
     /// </summary>
     public bool IsSent { get; set; }
 
-    static Article CreateFrom(ArticleEntity entity) =>       
-        new Article()  
+    public static Article CreateFrom(ArticleEntity entity)
+    {
+        var newArticle = new Article()  
         {
             Source = entity.Source,
             Attributes = entity.Attributes.Select(a => ArticleAttribute.CreateFrom(a)).ToList()            
         };
+
+        newArticle._entity = entity;
+        return newArticle;
+    } 
+        
+
+    public ArticleEntity ToEntity()
+    {
+        if (_entity == null)
+            _entity = new ArticleEntity();
+
+        _entity.Source = Source;
+        _entity.IsSent = IsSent;
+
+        _entity.Attributes.Clear();
+        _entity.Attributes.AddRange(Attributes.Select(a => a.ToEntity()));
+
+        return _entity;
+    }
 }
