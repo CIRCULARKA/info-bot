@@ -1,4 +1,3 @@
-
 using InfoBot.Core.Entities;
 
 namespace InfoBot.Core.Models;
@@ -9,6 +8,8 @@ namespace InfoBot.Core.Models;
 /// </summary>
 public class ArticleAttribute
 {
+    private ArticleAttributeEntity _entity = null;
+    
     /// <summary>
     /// Название атрибута
     /// </summary>
@@ -30,4 +31,14 @@ public class ArticleAttribute
             Value = entity.Value
         };
 
+    public ArticleAttributeEntity ToEntity()   
+    {
+        if (_entity == null)
+            _entity = new ArticleAttributeEntity();
+        
+        _entity.Name = Name;
+        _entity.Value = Value;
+
+        return _entity;
+    }
 }
